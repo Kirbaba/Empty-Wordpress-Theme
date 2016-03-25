@@ -23,6 +23,7 @@ class Parser {
                 ${$k} = $v;
             }
         }
+        include($tpl);
         ob_start();
         $a = ob_get_contents();
         ob_end_clean();
